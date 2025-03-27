@@ -1,5 +1,43 @@
 - name: Home
   columns:
+    - size: small
+      widgets:
+        - type: weather
+          location: Amsterdam, Netherlands
+          units: metric
+          hour-format: 24h
+
+        - type: bookmarks
+          groups:
+            - title: School
+              color: 200 50 50
+              links:
+                - title: UVA Canvas
+                  url: <UVA_CANVAS_URL>
+                - title: OS3
+                  url: <OS3_URL>
+                - title: Overleaf
+                  url: <OVERLEAF_URL>
+            - title: Entertainment
+              color: 10 70 50
+              links:
+                - title: Miruro
+                  url: <MIRURO_URL>
+                - title: Chess.com
+                  url: <CHESS_COM_URL>
+                - title: Netflix
+                  url: <NETFLIX_URL>
+                - title: YouTube
+                  url: <YOUTUBE_URL>
+            - title: Mailboxes
+              links:
+                - title: Outlook
+                  url: <OUTLOOK_URL>
+                - title: Gmail
+                  url: <GMAIL_URL>
+                - title: OS3 Webmail
+                  url: <OS3_WEBMAIL_URL>
+
     - size: full
       widgets:
         - type: search
@@ -9,77 +47,86 @@
           cache: 1m
           title: Services
           sites:
+            - title: Home Assistant
+              url: <HOME_ASSISTANT_URL>
+              icon: si:homeassistant
             - title: Jellyfin
-              url: https://yourdomain.com/
+              url: <JELLYFIN_URL>
               icon: si:jellyfin
-
             - title: Jellyseerr
-              url: https://yourdomain.com/
-              icon: si:jellyseerr
-
+              url: <JELLYSEERR_URL>
+              icon: si:imdb
             - title: Immich
-              url: https://yourdomain.com/
+              url: <IMMICH_URL>
               icon: si:immich
-            
             - title: Nextcloud
-              url: https://yourdomain.com/
+              url: <NEXTCLOUD_URL>
               icon: si:nextcloud
-            
             - title: Invoice Ninja
-              url: https://yourdomain.com/
+              url: <INVOICE_NINJA_URL>
               icon: si:invoiceninja
-
             - title: AdGuard Home
-              url: https://yourdomain.com/
+              url: <ADGUARD_HOME_URL>
               icon: si:adguard
-
             - title: Romm
-              url: https://yourdomain.com/
-              icon: si:romm
-            
+              url: <ROMM_URL>
+              icon: si:playstation
             - title: Uptime Kuma
-              url: https://yourdomain.com/
+              url: <UPTIME_KUMA_URL>
               icon: si:uptimekuma
-
-            - title: Cloudflared
-              url: https://yourdomain.com/
-              icon: si:cloudflare
-
             - title: FileBrowser
-              url: https://yourdomain.com/
-              icon: si:filebrowser
-
-            - title: Grafana
-              url: https://yourdomain.com/
-              icon: si:grafana
-
-            - title: MineOS
-              url: https://yourdomain.com/
-              icon: si:minecraft
-
+              url: <FILEBROWSER_URL>
+              icon: si:files
             - title: Bazarr
-              url: https://yourdomain.com/
-              icon: si:bazarr
-
+              url: <BAZARR_URL>
+              icon: si:subtitleedit
             - title: Prowlarr
-              url: https://yourdomain.com/
-              icon: si:prowlarr
-
+              url: <PROWLARR_URL>
+              icon: si:timescale
             - title: qBittorrent
-              url: https://yourdomain.com/
+              url: <QBITTORRENT_URL>
               icon: si:qbittorrent
-
             - title: Radarr
-              url: https://yourdomain.com/
+              url: <RADARR_URL>
               icon: si:radarr
-
-            - title: Recyclarr
-              url: https://yourdomain.com/
-              icon: si:recyclarr
-
             - title: Sonarr
-              url: https://yourdomain.com/
+              url: <SONARR_URL>
               icon: si:sonarr
 
+        - type: group
+          widgets:
+            - type: releases
+              cache: 1d
+              token: #YOUR TOKEN
+              repositories:
+                - glanceapp/glance
+                - jellyfin/jellyfin
+                - fallenbagel/jellyseerr
+                - immich-app/immich
+                - nextcloud/server
+                - invoiceninja/invoiceninja
+                - AdguardTeam/AdGuardHome
+                - louislam/uptime-kuma
+                - filebrowser/filebrowser
+                - morpheus65535/bazarr
+                - prowlarr/prowlarr
+                - qbittorrent/qBittorrent
+                - radarr/radarr
+                - sonarr/sonarr
+            - type: reddit
+              subreddit: technology
+              show-thumbnails: true
+            - type: reddit
+              subreddit: selfhosted
+              show-thumbnails: true
+
+    - size: small
+      widgets:
+        - type: markets
+          markets:
+            - symbol: ETH-EUR
+              name: Ethereum
+            - symbol: VUSA.AS
+              name: Vanguard S&P 500 UCITS - Dist
 
 
