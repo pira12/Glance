@@ -1,0 +1,85 @@
+  - name: Home
+    columns:
+      - size: full
+        widgets:
+          - type: search
+            autofocus: true
+
+          - type: monitor
+            cache: 1m
+            title: Services
+            sites:
+              - title: Jellyfin
+                url: https://yourdomain.com/
+                icon: si:jellyfin
+
+              - title: Jellyseerr
+                url: https://yourdomain.com/
+                icon: si:jellyseerr
+
+              - title: Immich
+                url: https://yourdomain.com/
+                icon: si:immich
+              
+              - title: Nextcloud
+                url: https://yourdomain.com/
+                icon: si:nextcloud
+              
+              - title: Invoice Ninja
+                url: https://yourdomain.com/
+                icon: si:invoiceninja
+
+              - title: AdGuard Home
+                url: https://yourdomain.com/
+                icon: si:adguard
+
+              - title: Romm
+                url: https://yourdomain.com/
+                icon: si:romm
+              
+              - title: Uptime Kuma
+                url: https://yourdomain.com/
+                icon: si:uptimekuma
+
+              - title: Cloudflared
+                url: https://yourdomain.com/
+                icon: si:cloudflare
+
+              - title: FileBrowser
+                url: https://yourdomain.com/
+                icon: si:filebrowser
+
+              - title: Grafana
+                url: https://yourdomain.com/
+                icon: si:grafana
+
+              - title: MineOS
+                url: https://yourdomain.com/
+                icon: si:minecraft
+
+              - title: Bazarr
+                url: https://yourdomain.com/
+                icon: si:bazarr
+
+              - title: Prowlarr
+                url: https://yourdomain.com/
+                icon: si:prowlarr
+
+              - title: qBittorrent
+                url: https://yourdomain.com/
+                icon: si:qbittorrent
+
+              - title: Radarr
+                url: https://yourdomain.com/
+                icon: si:radarr
+
+              - title: Recyclarr
+                url: https://yourdomain.com/
+                icon: si:recyclarr
+
+              - title: Sonarr
+                url: https://yourdomain.com/
+                icon: si:sonarr
+
+
+

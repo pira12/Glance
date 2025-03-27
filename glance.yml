@@ -1,0 +1,9 @@
+pages:
+  !include: home.yml
+  !include: finance.yml
+  !include: gaming.yml
+
+theme:
+  background-color: 100 20 10
+  primary-color: 40 90 40
+  contrast-multiplier: 1.3
